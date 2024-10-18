@@ -1,13 +1,6 @@
-# tms-min-side
+# astro-server-islands-errors
 Container som setter sammen mikrofrontends for Min Side.
 
-## Kom i gang
-1. Bygg tms-min-side ved å kjøre npm run build
-2. Start appen lokalt ved å kjøre npm run dev og npm run mock
-3. Appen nås på http://localhost:4321/minside
-
-## Henvendelser
-Spørsmål knyttet til koden eller prosjektet kan stilles som issues her på github.
-
-For NAV-ansatte
-Interne henvendelser kan sendes via Slack i kanalen #team-personbruker.
+## Usage
+1. Start the mock server by running `npm run mock`
+2. Start the app by running `npm run dev`
