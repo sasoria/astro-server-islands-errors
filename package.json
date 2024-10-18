@@ -1,0 +1,31 @@
+{
+  "name": "astro-server-islands",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "mock": "tsx ./mock/server.ts",
+    "preview": "node ./dist/server/entry.mjs",
+    "astro": "astro",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "@astrojs/node": "8.3.3",
+    "@navikt/oasis": "^3.3.0",
+    "astro": "4.15.4",
+    "dayjs": "1.11.11"
+  },
+  "devDependencies": {
+    "@hono/node-server": "1.11.1",
+    "@types/node": "20.12.12",
+    "hono": "4.5.8",
+    "prettier": "3.2.5",
+    "prettier-plugin-astro": "0.13.0",
+    "tsx": "4.10.5"
+  },
+  "prettier": {
+    "printWidth": 120
+  }
+}

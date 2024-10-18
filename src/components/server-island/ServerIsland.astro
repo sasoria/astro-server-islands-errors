@@ -1,0 +1,26 @@
+---
+
+let isError =  false;
+
+const response = await fetch("http://localhost:3000/error", {
+  method: "GET",
+  headers: {
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  },
+}).then((response) => {
+  if (!response.ok) {
+    console.error(`Error, fetch failed with status: ${response.status}`);
+    isError = true;
+    return
+  }
+
+  return response.json();
+}).catch((error) => {
+  console.error(`Error, fetch failed: ${error}`);
+  isError = true;
+});
+
+---
+
+{isError ? <h1>The fetch request failed</h1> : <h1>Server Island</h1>}
